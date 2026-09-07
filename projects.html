@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects - Alex Pratama | Portofolio Karya & Rekayasa Web</title>
+  <meta name="description" content="Koleksi proyek pilihan: aplikasi web modern, UI/UX design system, dan sistem berskala enterprise." />
+  <meta property="og:title" content="Projects - Alex Pratama" />
+  <meta property="og:description" content="Koleksi proyek pilihan: aplikasi web modern, UI/UX design system, dan sistem berskala enterprise." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts & Stylesheets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/responsive.css">
+</head>
+<body>
+  <!-- Ambient Background Orbs -->
+  <div class="bg-ambient-orb-1" aria-hidden="true"></div>
+  <div class="bg-ambient-orb-2" aria-hidden="true"></div>
+
+  <!-- Global Header / Navbar -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <nav class="navbar" aria-label="Navigasi Utama">
+        <a href="index.html" class="brand-logo" id="brandLogo" aria-label="Halaman Utama">
+          <span class="brand-dot"></span>
+          <span>Alex Pratama</span>
+          <span class="brand-badge">Dev</span>
+        </a>
+
+        <ul class="nav-menu" id="navMenu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link" id="navHome">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link" id="navAbout">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="projects.html" class="nav-link active" id="navProjects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="skills.html" class="nav-link" id="navSkills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link" id="navContact">Contact</a>
+          </li>
+        </ul>
+
+        <div class="nav-actions">
+          <div class="theme-switch-wrapper" title="Beralih Tema Gelap / Terang">
+            <button class="theme-switch" id="themeSwitch" aria-label="Toggle Tema Mode">
+              <span class="theme-switch-thumb"></span>
+            </button>
+          </div>
+
+          <a href="contact.html" class="btn btn-primary btn-sm">
+            Hire Me
+          </a>
+
+          <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Buka Menu Navigasi" aria-expanded="false">
+            ☰
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content: Projects Showcase -->
+  <main id="mainContent">
+    <section class="section-wrapper">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portofolio Pilihan</span>
+          <h1>Karya & Proyek Terpilih</h1>
+          <p>Kumpulan solusi digital interaktif yang dirancang dengan presisi visual, clean code, dan performa tinggi.</p>
+        </div>
+
+        <!-- Filter Tabs (Ref: Tabs in UI Kit) -->
+        <div class="filter-tabs" role="tablist" aria-label="Filter Kategori Proyek">
+          <button class="tab-btn active" data-filter="all" role="tab" aria-selected="true">Semua Proyek (6)</button>
+          <button class="tab-btn" data-filter="webapp" role="tab" aria-selected="false">Web Application</button>
+          <button class="tab-btn" data-filter="uiux" role="tab" aria-selected="false">UI/UX Design</button>
+          <button class="tab-btn" data-filter="fullstack" role="tab" aria-selected="false">Full Stack</button>
+        </div>
+
+        <!-- Projects Grid Layout -->
+        <div class="projects-grid" id="projectsContainer">
+          <!-- Project 1 -->
+          <article class="glass-card project-card" data-category="webapp">
+            <div class="project-thumb-wrapper">
+              <span class="project-category-overlay badge badge-cyan">Web App</span>
+              <img 
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=80" 
+                alt="Enterprise Analytics Dashboard" 
+                class="project-thumb"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Enterprise Analytics Dashboard</h3>
+              <p class="project-desc">
+                Platform pemantauan metrik analitik real-time dengan visualisasi data interaktif, mode gelap adaptif, filtering dinamis, dan ekspor laporan instan.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Chart.js</span>
+                <span class="tech-tag">CSS3</span>
+              </div>
+              <div class="project-actions">
+                <button 
+                  onclick="openProjectModal('Enterprise Analytics Dashboard', 'Web App', 'Platform analitik perusahaan ini dirancang untuk memproses lebih dari 100.000 data point secara real-time melalui WebSocket. Dilengkapi sistem filter multi-dimensi, ekspor PDF/CSV instan, serta integrasi dashboard kustom dengan visualisasi grafik interaktif.', 'React, TypeScript, Chart.js, CSS3, WebSockets', 'https://demo-analytics.example.com', 'https://github.com/example/analytics-dashboard', 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=80')" 
+                  class="btn btn-primary btn-sm" 
+                  style="flex: 1;"
+                >
+                  Detail & Demo
+                </button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-icon" title="GitHub Repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="glass-card project-card" data-category="uiux">
+            <div class="project-thumb-wrapper">
+              <span class="project-category-overlay badge badge-purple">UI/UX Design</span>
+              <img 
+                src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=800&auto=format&fit=crop&q=80" 
+                alt="Cyber Glass Design System" 
+                class="project-thumb"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Cyber Glass UI Kit System</h3>
+              <p class="project-desc">
+                Desain sistem komprehensif bertema glassmorphism futuristik dengan 60+ komponen modular, autolayout Figma presisi, token warna, dan panduan aksesibilitas.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Figma</span>
+                <span class="tech-tag">Design System</span>
+                <span class="tech-tag">UI/UX</span>
+                <span class="tech-tag">WCAG 2.1</span>
+              </div>
+              <div class="project-actions">
+                <button 
+                  onclick="openProjectModal('Cyber Glass UI Kit System', 'UI/UX Design', 'Sistem desain UI lengkap yang terinspirasi estetika Glassmorphism modern dengan pantulan cahaya specular, gradient borders, dan efek pendaran neon halus. Menyediakan 60+ komponen termasuk tombol pill, modal berlapis, switch toggle, tabs segmen, dan input form responsif.', 'Figma, Design Tokens, UI/UX, Glassmorphism, CSS Custom Properties', 'https://figma.com', 'https://github.com', 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=800&auto=format&fit=crop&q=80')" 
+                  class="btn btn-primary btn-sm" 
+                  style="flex: 1;"
+                >
+                  Detail & Demo
+                </button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-icon" title="GitHub Repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="glass-card project-card" data-category="fullstack">
+            <div class="project-thumb-wrapper">
+              <span class="project-category-overlay badge badge-emerald">Full Stack</span>
+              <img 
+                src="https://images.unsplash.com/photo-1557821552-17105176677c?w=800&auto=format&fit=crop&q=80" 
+                alt="NextGen Fintech Banking Platform" 
+                class="project-thumb"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">NextGen Fintech Banking Platform</h3>
+              <p class="project-desc">
+                Portal perbankan digital generasi baru dengan enkripsi end-to-end, multi-rekening mata uang, transfer instan, dan riwayat transaksi interaktif.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Docker</span>
+              </div>
+              <div class="project-actions">
+                <button 
+                  onclick="openProjectModal('NextGen Fintech Banking Platform', 'Full Stack', 'Aplikasi perbankan modern yang memprioritaskan keamanan finansial tingkat tinggi. Mendukung transfer dana instan, otentikasi dua faktor (2FA), manajemen kartu virtual, dan grafik riwayat pengeluaran bulanan dengan performa latensi sangat rendah.', 'React, Node.js, Express, PostgreSQL, Docker, Redis', 'https://demo-fintech.example.com', 'https://github.com/example/fintech-portal', 'https://images.unsplash.com/photo-1557821552-17105176677c?w=800&auto=format&fit=crop&q=80')" 
+                  class="btn btn-primary btn-sm" 
+                  style="flex: 1;"
+                >
+                  Detail & Demo
+                </button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-icon" title="GitHub Repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="glass-card project-card" data-category="webapp">
+            <div class="project-thumb-wrapper">
+              <span class="project-category-overlay badge badge-cyan">Web App</span>
+              <img 
+                src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&auto=format&fit=crop&q=80" 
+                alt="Telemedicine Web Portal" 
+                class="project-thumb"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">CareLink Telemedicine Portal</h3>
+              <p class="project-desc">
+                Sistem konsultasi medis online dengan video call WebRTC terenkripsi, penjadwalan janji temu otomatis dengan kalender, dan e-resep digital.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">WebRTC</span>
+                <span class="tech-tag">Tailwind</span>
+                <span class="tech-tag">Firebase</span>
+              </div>
+              <div class="project-actions">
+                <button 
+                  onclick="openProjectModal('CareLink Telemedicine Portal', 'Web App', 'Platform kesehatan digital yang menghubungkan pasien dan dokter spesialis secara instan melalui video konsultasi HD terenkripsi, integrasi rekam medis elektronik (EMR), serta sistem pembayaran digital otomatis.', 'React, WebRTC, Tailwind, Firebase, PeerJS', 'https://carelink-demo.example.com', 'https://github.com/example/carelink', 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&auto=format&fit=crop&q=80')" 
+                  class="btn btn-primary btn-sm" 
+                  style="flex: 1;"
+                >
+                  Detail & Demo
+                </button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-icon" title="GitHub Repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="glass-card project-card" data-category="uiux">
+            <div class="project-thumb-wrapper">
+              <span class="project-category-overlay badge badge-purple">UI/UX Design</span>
+              <img 
+                src="https://images.unsplash.com/photo-1542744094-3a31f272c490?w=800&auto=format&fit=crop&q=80" 
+                alt="Creative SaaS Workspace" 
+                class="project-thumb"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Aether Workspace Redesign</h3>
+              <p class="project-desc">
+                Desain ulang antarmuka kolaborasi kerja terpadu untuk tim desain & developer dengan kanban visual, kanvas real-time, dan micro-interactions halus.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Figma</span>
+                <span class="tech-tag">User Research</span>
+                <span class="tech-tag">Prototyping</span>
+              </div>
+              <div class="project-actions">
+                <button 
+                  onclick="openProjectModal('Aether Workspace Redesign', 'UI/UX Design', 'Proyek desain ulang komprehensif untuk ruang kerja tim produk digital. Berhasil menurunkan bounce rate antarmuka sebesar 35% dan meningkatkan durasi interaksi pengguna melalui struktur hierarki visual yang lebih seimbang dan ergonomis.', 'Figma, User Testing, Wireframing, Micro-interactions', 'https://figma.com', 'https://github.com', 'https://images.unsplash.com/photo-1542744094-3a31f272c490?w=800&auto=format&fit=crop&q=80')" 
+                  class="btn btn-primary btn-sm" 
+                  style="flex: 1;"
+                >
+                  Detail & Demo
+                </button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-icon" title="GitHub Repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6 -->
+          <article class="glass-card project-card" data-category="fullstack">
+            <div class="project-thumb-wrapper">
+              <span class="project-category-overlay badge badge-emerald">Full Stack</span>
+              <img 
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=80" 
+                alt="Headless Commerce Experience" 
+                class="project-thumb"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Lumina Headless Storefront</h3>
+              <p class="project-desc">
+                Toko e-commerce modern dengan arsitektur headless, integrasi gateway pembayaran Stripe internasional, pencarian cerdas instan, dan SSR ultra cepat.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Stripe</span>
+                <span class="tech-tag">GraphQL</span>
+              </div>
+              <div class="project-actions">
+                <button 
+                  onclick="openProjectModal('Lumina Headless Storefront', 'Full Stack', 'Platform belanja digital berkinerja tinggi dengan arsitektur JAMStack headless. Menghasilkan skor Google PageSpeed 99 di mobile dan desktop, integrasi checkout Stripe aman dalam hitungan detik, serta sinkronisasi inventaris multi-gudang real-time.', 'Next.js, TypeScript, GraphQL, Stripe API, Tailwind CSS', 'https://lumina-store.example.com', 'https://github.com/example/lumina-commerce', 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=80')" 
+                  class="btn btn-primary btn-sm" 
+                  style="flex: 1;"
+                >
+                  Detail & Demo
+                </button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-icon" title="GitHub Repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Project Preview Modal (Ref: Modal in UI Kit) -->
+  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-glass-container">
+      <div class="modal-header">
+        <div>
+          <span class="badge badge-cyan" id="modalCategory">Web App</span>
+          <h3 id="modalTitle" style="margin-top: 0.35rem;">Judul Proyek</h3>
+        </div>
+        <button class="modal-close-btn" onclick="closeProjectModal()" aria-label="Tutup Dialog Modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <div style="width: 100%; height: 260px; border-radius: var(--radius-md); overflow: hidden; margin-bottom: 1.5rem; background: #0f172a;">
+          <img id="modalImg" src="" alt="Pratinjau Proyek" style="width: 100%; height: 100%; object-fit: cover;" />
+        </div>
+
+        <h4 style="margin-bottom: 0.5rem;">Tentang Proyek</h4>
+        <p id="modalDesc" style="line-height: 1.7; color: var(--text-secondary);"></p>
+
+        <h4 style="margin: 1.25rem 0 0.5rem 0;">Teknologi & Tools Utama</h4>
+        <div id="modalTechs" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.75rem;"></div>
+
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap; padding-top: 1rem; border-top: 1px solid var(--border-glass);">
+          <a id="modalDemoBtn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="flex: 1;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            <span>Kunjungi Live Demo</span>
+          </a>
+          <a id="modalGitBtn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="flex: 1;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <span>Lihat Source Code</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <span class="brand-dot"></span>
+            <span>Alex Pratama</span>
+          </a>
+          <p>
+            Senior Frontend Web Developer dan UI/UX Designer yang berdedikasi menciptakan karya digital bersih, interaktif, dan berdampak nyata.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigasi Halaman</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Dashboard / Home</a></li>
+            <li><a href="about.html">Tentang Saya</a></li>
+            <li><a href="projects.html">Portofolio Karya</a></li>
+            <li><a href="skills.html">Keahlian & Tools</a></li>
+            <li><a href="contact.html">Kontak & Diskusi</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Kontak Langsung</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:alex.pratama.dev@gmail.com">alex.pratama.dev@gmail.com</a></li>
+            <li><a href="https://wa.me/6281234567890">+62 812-3456-7890</a></li>
+            <li><span style="color: var(--text-secondary);">Jakarta, Indonesia</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Alex Pratama. Seluruh hak cipta dilindungi. Dibuat dengan HTML5 & CSS3 Murni.
+        </div>
+        <button class="back-to-top" id="backToTopBtn" aria-label="Kembali ke atas">
+          <span>Kembali ke Atas</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/main.js"></script>
+</body>
+</html>

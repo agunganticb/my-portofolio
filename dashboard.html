@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - Alex Pratama | Senior Frontend & UI/UX</title>
+  <meta name="description" content="Dashboard portofolio pribadi modern, responsif, dan interaktif dengan desain clean glassmorphism profesional." />
+  <meta property="og:title" content="Dashboard - Alex Pratama" />
+  <meta property="og:description" content="Dashboard portofolio pribadi modern, responsif, dan interaktif dengan desain clean glassmorphism profesional." />
+  <meta property="og:type" content="website" />
+  
+  <!-- Fonts & Stylesheets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/responsive.css">
+</head>
+<body>
+  <!-- Ambient Background Orbs -->
+  <div class="bg-ambient-orb-1" aria-hidden="true"></div>
+  <div class="bg-ambient-orb-2" aria-hidden="true"></div>
+
+  <!-- Global Header / Navbar -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <nav class="navbar" aria-label="Navigasi Utama">
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-logo" id="brandLogo" aria-label="Halaman Utama">
+          <span class="brand-dot"></span>
+          <span>Alex Pratama</span>
+          <span class="brand-badge">Dev</span>
+        </a>
+
+        <!-- Desktop & Mobile Navigation Links -->
+        <ul class="nav-menu" id="navMenu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link active" id="navHome">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link" id="navAbout">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="projects.html" class="nav-link" id="navProjects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="skills.html" class="nav-link" id="navSkills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link" id="navContact">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Action Items (Theme Toggle & CTA) -->
+        <div class="nav-actions">
+          <div class="theme-switch-wrapper" title="Beralih Tema Gelap / Terang">
+            <button class="theme-switch" id="themeSwitch" aria-label="Toggle Tema Mode">
+              <span class="theme-switch-thumb"></span>
+            </button>
+          </div>
+
+          <a href="contact.html" class="btn btn-primary btn-sm" id="navCtaBtn">
+            Hire Me
+          </a>
+
+          <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Buka Menu Navigasi" aria-expanded="false">
+            ☰
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content: Dashboard / Home -->
+  <main id="mainContent">
+    <!-- HERO SECTION -->
+    <section class="section-wrapper hero-section" id="heroSection">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left Column: Copy & CTAs -->
+          <div class="hero-content">
+            <div class="hero-status-pill">
+              <span class="status-indicator"></span>
+              <span>Available for New Opportunities</span>
+            </div>
+
+            <h1 class="hero-title">
+              Membangun Solusi Web <span class="text-gradient-cyan">Interaktif</span> & <span class="text-gradient-purple">Berskala Tinggi</span>
+            </h1>
+
+            <p class="hero-subtitle">
+              Senior Frontend Developer & UI/UX Designer
+            </p>
+
+            <p class="hero-desc lead">
+              Halo! Saya Alex Pratama, profesional pengembang web dengan pengalaman lebih dari 5 tahun dalam merancang dan mengembangkan antarmuka digital yang cepat, responsif, estetis, dan berfokus penuh pada kenyamanan pengguna.
+            </p>
+
+            <div class="hero-actions">
+              <a href="projects.html" class="btn btn-primary btn-lg" id="heroCtaProjects">
+                <span>Lihat Project</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <a href="contact.html" class="btn btn-secondary btn-lg" id="heroCtaContact">
+                <span>Hubungi Saya</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </a>
+            </div>
+
+            <!-- Social Links Strip -->
+            <div class="hero-socials">
+              <span class="social-label">Connect:</span>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-icon" title="GitHub" aria-label="GitHub Profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn-icon" title="LinkedIn" aria-label="LinkedIn Profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="btn-icon" title="Twitter / X" aria-label="Twitter Profile">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <button onclick="copyToClipboard('alex.pratama.dev@gmail.com', 'Email')" class="btn-icon" title="Salin Email" aria-label="Salin Alamat Email">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Column: Glassmorphic Profile Card -->
+          <div class="hero-visual-wrapper">
+            <div class="floating-glass-chip floating-chip-1" aria-hidden="true">
+              <span>⚡</span> <span>Frontend Specialist</span>
+            </div>
+            <div class="floating-glass-chip floating-chip-2" aria-hidden="true">
+              <span>🎨</span> <span>UI/UX Architecture</span>
+            </div>
+
+            <div class="profile-glass-card" id="profileGlassCard">
+              <div class="profile-avatar-wrapper">
+                <div class="profile-avatar-ring"></div>
+                <img 
+                  src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80" 
+                  alt="Alex Pratama Profile Avatar" 
+                  class="profile-avatar"
+                  loading="lazy"
+                />
+              </div>
+
+              <h2 class="profile-name">Alex Pratama</h2>
+              <div class="profile-role">Senior Frontend Engineer</div>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1.25rem;">
+                Spesialis React, TypeScript, Modern CSS & Desain Antarmuka Glassmorphic yang ramah pengguna.
+              </p>
+
+              <div class="profile-info-divider"></div>
+
+              <div class="profile-quick-stats">
+                <div class="quick-stat-box">
+                  <div class="quick-stat-value">45+</div>
+                  <div class="quick-stat-label">Project Selesai</div>
+                </div>
+                <div class="quick-stat-box">
+                  <div class="quick-stat-value">99.8%</div>
+                  <div class="quick-stat-label">Client Rating</div>
+                </div>
+              </div>
+
+              <a href="about.html" class="btn btn-outline" style="width: 100%;">
+                <span>Lihat Profil Lengkap</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- KEY METRICS / STATS SECTION -->
+        <div class="metrics-grid" id="metricsSection">
+          <div class="metric-card">
+            <div class="metric-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            </div>
+            <div class="metric-number">
+              <span class="counter-val" data-target="5">5</span><span class="metric-plus">+</span>
+            </div>
+            <div class="metric-title">Tahun Pengalaman Kerja</div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+            </div>
+            <div class="metric-number">
+              <span class="counter-val" data-target="45">45</span><span class="metric-plus">+</span>
+            </div>
+            <div class="metric-title">Proyek Berhasil Diselesaikan</div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <div class="metric-number">
+              <span class="counter-val" data-target="30">30</span><span class="metric-plus">+</span>
+            </div>
+            <div class="metric-title">Klien Puas di Berbagai Negara</div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            </div>
+            <div class="metric-number">
+              <span class="counter-val" data-target="99">99</span><span class="metric-plus">%</span>
+            </div>
+            <div class="metric-title">Tingkat Kepuasan & Uptime</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <span class="brand-dot"></span>
+            <span>Alex Pratama</span>
+          </a>
+          <p>
+            Senior Frontend Web Developer dan UI/UX Designer yang berdedikasi menciptakan karya digital bersih, interaktif, dan berdampak nyata.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigasi Halaman</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Dashboard / Home</a></li>
+            <li><a href="about.html">Tentang Saya</a></li>
+            <li><a href="projects.html">Portofolio Karya</a></li>
+            <li><a href="skills.html">Keahlian & Tools</a></li>
+            <li><a href="contact.html">Kontak & Diskusi</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Kontak Langsung</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:alex.pratama.dev@gmail.com">alex.pratama.dev@gmail.com</a></li>
+            <li><a href="https://wa.me/6281234567890">+62 812-3456-7890</a></li>
+            <li><span style="color: var(--text-secondary);">Jakarta, Indonesia</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Alex Pratama. Seluruh hak cipta dilindungi. Dibuat dengan HTML5 & CSS3 Murni.
+        </div>
+        <button class="back-to-top" id="backToTopBtn" aria-label="Kembali ke atas">
+          <span>Kembali ke Atas</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/main.js"></script>
+</body>
+</html>
